@@ -1,0 +1,5 @@
+{
+  "name": "AI Image Editor",
+  "description": "An application that allows users to upload an image and describe edits using natural language. The Gemini API processes the request to generate a new, edited image.",
+  "requestFramePermissions": []
+}
