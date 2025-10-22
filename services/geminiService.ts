@@ -17,7 +17,7 @@ export const editImageWithGemini = async (
   const API_KEY = process.env.API_KEY;
 
   if (!API_KEY) {
-    throw new Error("مفتاح الواجهة البرمجية (API_KEY) غير مهيأ. يرجى التأكد من إعداده في متغيرات بيئة الاستضافة.");
+    throw new Error("مفتاح الواجهة البرمجية (API_KEY) غير موجود. لحل المشكلة، يرجى الانتقال إلى إعدادات مشروعك على منصة الاستضافة (مثل Netlify أو Vercel)، وإضافة 'متغير بيئة' جديد بالاسم API_KEY وقيمة المفتاح الذي حصلت عليه.");
   }
   
   const ai = new GoogleGenAI({ apiKey: API_KEY });
